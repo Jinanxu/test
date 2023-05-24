@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Component</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "kanit", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 0 32px rgb(0, 0, 0,0);
+      }
+      .btn{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+      }
+      .carousel
+      {
+        background-color: #087f5b;
+        width: 800px;
+        margin: 100px auto;
+        padding:32px;
+        color: #e6fcf5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 86px;
+        position: relative;
+        padding-left: 86px;
+        padding-right: 46px;
+        border-radius: 8px;
+
+      }
+      
+      .btn-right{
+        right: 0;
+        top: 50%;
+        transform: translate(50%,-50%);
+      }
+      .btn-left{
+        left: 0;
+        top: 50%;
+        transform: translate(-50%,50%);
+      }
+      .quote{
+        width: 24px;
+      }
+      .btn-icon{
+        color: #087f5b;
+        width: 24px;
+        height: 24px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="jou.jpg" alt="jou">
+      <blockquote class="quote">
+        <p class="quote-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Aperiam modi veritatis autem corrupti porro possimus tempore, libero iste quisquam voluptatum eos quo cum minus natus aut aliquam pariatur culpa amet!
+        </p>
+        <p class="quote-author">jou</p>
+        <p class="quote-job">professor</p>
+      </blockquote>
+      <button class="btn btn-left">
+        <svg xmlns="http://www.w3.org/2000/svg"
+         fill="none"
+          viewBox="0 0 24 24" 
+          stroke-width="1.5"
+           stroke="currentColor"
+            class="btn-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        fill="none"
+         viewBox="0 0 24 24" 
+         stroke-width="1.5" 
+         stroke="currentColor"
+          class="btn-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+      <div></div>
+
+    </div>
+  </body>
+</html>
